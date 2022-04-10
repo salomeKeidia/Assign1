@@ -4,14 +4,14 @@ Name: Salome Keidia
 
 ## Overview.
 
-[A brief statement on the content of this repository.]
+[features a movie app which has movie cards and movie details for each card, it has 6 views and a filtercard for filtering genres and names.]
 
 ### Features.
 [ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
 
 i added a recommendations, trending and recent page
 i added the route links and the endpoints of popular, top rated and now playing
-+ Feature 1
+changes the colour for the filter card and movie card
 + Feature 2
 + Feature 3
 + etc
@@ -26,6 +26,9 @@ i added the route links and the endpoints of popular, top rated and now playing
 [ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
 
 e.g.
+now playing movies used for recent movies page -  /movie/popular
+popular movies used for the trending page - /movie/now_playing
+top rated movies used for the recommended page - /movie/top_rated
 + Discover list of movies - discover/movie
 + Movie details - movie/:id
 + Movie genres = /genre/movie/list
