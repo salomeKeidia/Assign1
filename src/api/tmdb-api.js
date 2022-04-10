@@ -128,3 +128,4 @@ export const getMovies = () => {
         return json.results;
       });
   };
+

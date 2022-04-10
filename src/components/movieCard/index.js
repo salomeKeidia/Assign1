@@ -25,7 +25,11 @@ export default function MovieCard({ movie, action }) {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card 
+      sx={{
+        maxWidth: 345,
+        backgroundColor: "rgb(219, 179, 255)"
+      }} >
       <CardHeader
         avatar={
           movie.favorite ? (
