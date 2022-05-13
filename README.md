@@ -1,51 +1,53 @@
-# Assignment 1 - ReactJS app.
+# Assignment 2 - Web API.
 
-Name: Salome Keidia
+Name: Your Name
 
-## Overview.
+## Features.
 
-[features a movie app which has movie cards and movie details for each card, it has 6 views and a filtercard for filtering genres and names.]
+A bullet-point list of the ADDITIONAL features you have implemented in the API **THAT WERE NOT IN THE LABS** (or modifications to existing features)
 
-### Features.
-[ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
-
-i added a recommendations, trending and recent page
-i added the route links and the endpoints of popular, top rated and now playing
-changes the colour for the filter card and movie card
-+ Feature 2
-+ Feature 3
-+ etc
-+ etc
+ + added a sign out and log in page with api routes
+ + added a protected route to recommended page so you cant view it unless logged in
+ + added authentication functionality
+ + added proxy route to connect to the movies api ,"proxy":http://localhost:8080
 
 ## Setup requirements.
 
 [ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
 
-## API endpoints.
+## API Configuration
 
-[ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
+Describe any configuration that needs to take place before running the API. For example, creating an `.env` file and what variables to put in it. Give an example of how this might be done.
 
-e.g.
-now playing movies used for recent movies page -  /movie/popular
-popular movies used for the trending page - /movie/now_playing
-top rated movies used for the recommended page - /movie/top_rated
-+ Discover list of movies - discover/movie
-+ Movie details - movie/:id
-+ Movie genres = /genre/movie/list
+REMEMBER: DON'T PUT YOUR OWN USERNAMES/PASSWORDS/AUTH KEYS IN THE README OR ON GITHUB, just placeholders as indicated below:
 
-## Routing.
+______________________
+NODEENV=development
+PORT=8080
+HOST=
+mongoDB=YourMongoURL
+seedDb=true
+secret=YourJWTSecret
+______________________
 
-[ List the __new routes__ supported by your app and state the associated page.]
+## API Design
+Give an overview of your web API design, perhaps similar to the following: 
 
-+ /blogs - displays all published blogs.
-+ /blogs/:id - displays a particular blog.
-+ /blogs/:id/comments - detail view of a particular blog and its comments.
-+ etc.
+- /api/movies | GET | Gets a list of movies 
+- /api/movies/{movieid} | GET | Gets a single movie 
+- /api/movies/{movieid}/reviews | GET | Get all reviews for movie 
+- /api/movies/{movieid}/reviews | POST | Create a new review for Movie 
 
-[If relevant, state what aspects of your app are protected (i.e. require authentication) and what is public.]
+If you have your API design on an online platform or graphic, please link to it (e.g. [Swaggerhub](https://app.swaggerhub.com/)).
 
-## Independent learning (If relevant).
+## Security and Authentication
 
-Itemize the technologies/techniques you researched independently and adopted in your project, 
-i.e. aspects not covered in the lectures/labs. Include the source code filenames that illustrate these 
-(we do not require code excerpts) and provide references to the online resources that helped you (articles/blogs).
+Give details of authentication/security implemented on the API (e.g. passport/sessions). Indicate which routes are protected.
+
+## Integrating with React App
+
+Describe how you integrated your React app with the API. List the views that use your Web API instead of the TMDB API. Describe any other updates to the React app from Assignment One.
+
+## Independent learning (if relevant)
+
+Briefly explain any non-standard features developed for the app.   
